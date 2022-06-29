@@ -1,0 +1,16 @@
+﻿@page
+@model UI.Pages.CreateModel
+@{
+    ViewData["Title"] = "Film erstellen";
+}
+
+<form method="post">
+
+    <div class="form-group">
+        <label for="inputTitle">Titel</label>
+        <input type="text" class="form-control" id="inputTitle" asp-for="Movie.Title"/>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Speichern</button>
+    <a class="btn btn-secondary mt-3" asp-page="Index">Abbrechen</a>
+</form>
